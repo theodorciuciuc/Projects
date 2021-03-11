@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] /home/theodor/Desktop/Linux_Back_Up/RPG_Game/src/players/Player.java:54:5: Class 'Player' looks like designed for extension (can be subclassed), but the method 'balanceHp' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Player' final or making the method 'balanceHp' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+Audit done.
+Checkstyle ends with 1 errors.

@@ -1,0 +1,35 @@
+1)Task_1
+Nothing special, I use sleep and then print the messages.
+
+2)Task_2
+I use a semaphore and each car tries to acquire(), waits the individual amount
+of time and then releases to let the next car come.
+
+3)Task_3
+I use and array of semaphore, one for each lane.
+
+4)Task_4
+Same as Task_3 but there is a barrier that makes sure all cars reach the
+round_about at the same time.
+
+5)Task_5
+I use and array of semaphore, one for each lane, initialized with the maximum
+number of cars for each lane. This is how I make sure there are at all times
+maximum of X cars on a certain lane.
+
+6)Task_6
+I used an ArrayBlockingQueue. The cars with low priority are put in the queue,
+while the cars with high priority enter the round_about and increment an
+AtomicInteger in order to signal there are a certain amount of cars in the
+middle of the round_about.
+
+8)Task_8
+I use an ArrayBlockingQueue and an AtomicInteger in order to switch priority
+from one lane to the other. Once one of the queues has X cars waiting and it is
+its turn, the cars are allowed to go. After that the priority switches to the
+other lane.
+
+10)Task_10
+I use an ArrayBlockingQueue. All the cars enter the queue in order to maintain
+the original order they came through. A barrier syncs all of them and after
+the train has passed they continue their execution in order.

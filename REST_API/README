@@ -1,0 +1,38 @@
+The client has the following functionalities:
+
+1) Register
+I use the function compute_post_request with body_data the JSON that has the
+username and password.
+
+2) Login
+I use the function compute_post_request with body_data the JSON that has the
+username and password and I also save the cookie.
+
+3) Enter_library
+I use compute_get_request with the cookie received at login and I also save the
+authentication token.
+
+4) Get_books
+I use compute_get_request_token that is a modified version of the original
+function and can use the authentication token.
+
+5) Get_book
+I use compute_get_request_token that is a modified version of the original
+function and can use the authentication token.
+
+6) Add_book
+I use compute_post_request with body_data the JSON that has the fields of the
+book(name, author etc.) and the authentication token.
+
+7) Delete_book
+I use the function compute_delete_request_token which is a modified version of
+the original function but can add the authentification token and its type is
+DELETE.
+
+8) Logout
+I use compute_get_request with the cookie received at login.
+
+9) Exit
+Free the memory, close the sockets and exit the program.
+
+
